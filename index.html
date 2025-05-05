@@ -1,0 +1,63 @@
+
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>макан лучши репер</title>
+  <style>
+    /* Reset and base styling */
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+    }
+    .container {
+      max-width: 90vw;
+      max-height: 80vh;
+      width: 100%;
+      background: #222;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+      display: flex;
+      text-align: center;
+      font-weight: 700;
+      font-size: 1.8rem;
+      user-select: none;
+    }
+    video {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      background: black;
+      outline: none;
+    }
+    /* Responsive for small devices */
+    @media (max-width: 600px) {
+      .container {
+        max-height: 60vh;
+        padding: 10px;
+      }
+      h1 {
+        font-size: 1.4rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Видео плеер - main.mp4</h1>
+    <video controls preload="metadata" playsinline>
+      <source src="main.mp4" type="video/mp4" />
+      Ваш браузер не поддерживает видео тег.
+    </video>
+  </div>
+</body>
+</html>
